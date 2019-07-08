@@ -41,54 +41,63 @@ console.log(
 function numCreate(number) {
     switch (number) {
         case "0":
-            topLine.concat(' _ ');
-            midLine.concat('| |');
-            botLine.concat('|_|');
+            topLine = topLine + ' _ ';
+            midLine = midLine + '| |';
+            botLine = botLine + '|_|';
             break;
         case "1":
-            topLine.concat('   ');
-            midLine.concat('  |');
-            botLine.concat('  |');
+            topLine = topLine + '   ';
+            midLine = midLine + '  |';
+            botLine = botLine + '  |';
             break;
         case "2":
-            topLine.concat(' _ ');
-            midLine.concat(' _|');
-            botLine.concat('|_');
+            topLine = topLine + ' _ ';
+            midLine = midLine + ' _|';
+            botLine = botLine + '|_ ';
             break;
         case "3":
-            topLine.concat(' _ ');
-            midLine.concat(' _|');
-            botLine.concat(' _|');
+            topLine = topLine + ' _ ';
+            midLine = midLine + ' _|';
+            botLine = botLine + ' _|';
             break;
         case "4":
-            topLine.concat('   ');
-            midLine.concat('|_|');
-            botLine.concat('  |');
+            topLine = topLine + '   ';
+            midLine = midLine + '|_|';
+            botLine = botLine + '  |';
             break;
         case "5":
-            topLine.concat(' _ ');
-            midLine.concat('|_ ');
-            botLine.concat(' _|');
+            topLine = topLine + ' _ ';
+            midLine = midLine + '|_ ';
+            botLine = botLine + ' _|';
             break;
         case "6":
-            topLine.concat('   ');
-            midLine.concat('|_ ');
-            botLine.concat('|_|');
+            topLine = topLine + '   ';
+            midLine = midLine + '|_ ';
+            botLine = botLine + '|_|';
             break;
         case "7":
-            topLine.concat(' _ ');
-            midLine.concat('  |');
-            botLine.concat('  |');
+            topLine = topLine + ' _ ';
+            midLine = midLine + '  |';
+            botLine = botLine + '  |';
             break;
         case "8":
-            topLine.concat(' _ ');
-            midLine.concat('|_|');
-            botLine.concat('|_|');
+            topLine = topLine + ' _ ';
+            midLine = midLine + '|_|';
+            botLine = botLine + '|_|';
             break;
         case "9":
-            topLine.concat(' _ ');
-            midLine.concat('|_|');
-            botLine.concat('  |');
+            topLine = topLine + ' _ ';
+            midLine = midLine + '|_|';
+            botLine = botLine + '  |';
             break;
     };
 };
+
+// Building hhmm then log
+numCreate(hour1);
+numCreate(hour2);
+numCreate(minute1);
+numCreate(minute2);
+console.log(topLine);
+console.log(midLine);
+console.log(botLine);
