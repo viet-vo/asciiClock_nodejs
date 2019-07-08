@@ -17,7 +17,20 @@ console.log(
 `
  _   _     _   _
 |_| |_| * |_| |_|
-|_| |_| * |_| |_| 
+|_| |_| * |_| |_|
 
-`)
-console.log(minute);
+ _      _  _       _   _  _   _   _
+| |  |  _| _| |_| |_  |_   | |_| |_|
+|_|  | |_  _|   |  _| |_|  | |_|   |
+
+`);
+
+// From practicing making ascii numbers, makes me realize that numbers are made with 3 layers
+// Therefore, building out the clock display will involve structuring underscrore and pipe characters
+// ATM, it seems that building out with three arrays made with the top, mid, and bot pattern for each number will be the solution
+// i.e.
+// four() {
+//   topLine.concat('   ');
+//   midLine.concat('|_|');
+//   botLine.concat('  |');
+// };
