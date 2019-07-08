@@ -5,10 +5,10 @@ const hour = hour1 + hour2;
 const minute1 = time.charAt(3);
 const minute2 = time.charAt(4);
 const minute = minute1 + minute2;
-let isMorning,
-    topLine,
-    midLine,
-    botLine;
+let isMorning;
+let topLine = "";
+let midLine = "";
+let botLine = "";
 
 if (hour <= 12) {
     dayHalf = true;
@@ -90,12 +90,17 @@ function numCreate(number) {
             midLine = midLine + '|_|';
             botLine = botLine + '  |';
             break;
+        default:
+            topLine = topLine + '   ';
+            midLine = midLine + ' * ';
+            botLine = botLine + ' * ';
     };
 };
 
-// Building hhmm then log
+// Building hh:mm then log
 numCreate(hour1);
 numCreate(hour2);
+numCreate("asterisk");
 numCreate(minute1);
 numCreate(minute2);
 console.log(topLine);
